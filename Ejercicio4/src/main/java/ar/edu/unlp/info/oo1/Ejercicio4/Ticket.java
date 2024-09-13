@@ -20,7 +20,6 @@ public class Ticket {
 	}
 	
 	
-	
 	public void setFecha(LocalDate fecha) {
 		this.fecha = fecha;
 	}
@@ -62,10 +61,11 @@ public class Ticket {
 	
 	
 	public String toString() {
-		String ticket = "Fecha emitida: " + this.fecha.toString() + "\n" + "Cantidad de productos comprados: "
-				+ this.cantidadDeProductos + "\n" + "Peso total en productos: " + this.pesoTotal + "\n"
-				+ "Total a pagar: " + this.precioTotal;
-		return ticket;
+	    String aux = "Fecha de emisión: " + this.fecha.toString() + "\n" 
+	               + "Total de productos comprados: " + this.cantidadDeProductos + "\n" 
+	               + "Peso total de los productos: " + this.pesoTotal + " kg\n"
+	               + "Monto total a pagar: $" + this.precioTotal;
+	    return aux;
 	}
 	
 

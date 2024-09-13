@@ -3,9 +3,6 @@ package ar.edu.unlp.info.oo1.Ejercicio5;
 public class Cuadrado implements Figura {
 	private int lado;
 	
-	public Cuadrado() {
-		
-	}
 
 	public int getLado() {
 		return lado;

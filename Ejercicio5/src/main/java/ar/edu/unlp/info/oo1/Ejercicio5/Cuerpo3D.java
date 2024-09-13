@@ -3,10 +3,7 @@ package ar.edu.unlp.info.oo1.Ejercicio5;
 public class Cuerpo3D {
 	private double altura;
 	private Figura caraBasal;
-	
-	public Cuerpo3D() {	
-    
-	}
+
 	
 	
 	public double getAltura() {

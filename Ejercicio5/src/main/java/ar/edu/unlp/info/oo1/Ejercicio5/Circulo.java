@@ -3,10 +3,7 @@ package ar.edu.unlp.info.oo1.Ejercicio5;
 public class Circulo implements Figura{
 	private double radio;
 	
-	public Circulo() {
-	}
-	
-	
+
 	public double getDiametro() {
 		return this.radio * 2;
 	}

@@ -35,13 +35,13 @@ public class Ticket {
 	public double impuesto() {
 		return this.precioTotal * 0.21;
 	}
-	// 1.21 o 0.21?
-	//Hace falta todos los getters y setters, o solo los necesarios
+	
 	
 	public String toString() {
-		String aux = "Fecha emitida: " + this.fecha.toString() + "\n" + "Cantidad de productos comprados: "
-				+ this.cantidadDeProductos + "\n" + "Peso total en productos: " + this.pesoTotal + "\n"
-				+ "Total a pagar: " + this.precioTotal;
-		return aux;
+	    String aux = "Fecha de emisión: " + this.fecha.toString() + "\n" 
+	               + "Total de productos comprados: " + this.cantidadDeProductos + "\n" 
+	               + "Peso total de los productos: " + this.pesoTotal + " kg\n"
+	               + "Monto total a pagar: $" + this.precioTotal;
+	    return aux;
 	}
 }

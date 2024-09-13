@@ -7,16 +7,6 @@ public class Balanza {
 	private List<Producto> lista = new LinkedList<Producto>();
 	
 	
-	/*public Balanza() {
-		this.ponerEnCero();
-	}
-	
-	public void ponerEnCero() {
-		this.lista = new LinkedList<Producto>();
-	}
-	
-	
-	*/
 	public void ponerEnCero() {
 		this.lista.clear();
 	}

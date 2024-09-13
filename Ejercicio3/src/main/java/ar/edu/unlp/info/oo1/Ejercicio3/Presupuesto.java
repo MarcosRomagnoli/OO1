@@ -7,7 +7,7 @@ public class Presupuesto {
 	private LocalDate fecha;
 	private String cliente;
 	private List <Item> items;
-	//conviene linked o arraylist
+	
 	
 	public Presupuesto(String cliente) {
 		this.cliente = cliente;
@@ -24,6 +24,7 @@ public class Presupuesto {
 	public double calcularTotal() {
 		return this.items.stream().mapToDouble(item -> item.costo()).sum();
 	}
+	
 	//
 	//public double calcularTotal() {
 	//	return this.items.stream().mapToDouble(Item::costo).sum();

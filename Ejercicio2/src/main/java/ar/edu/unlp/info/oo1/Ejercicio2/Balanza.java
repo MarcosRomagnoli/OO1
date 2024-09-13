@@ -6,20 +6,6 @@ public class Balanza {
 	private double pesoTotal;
 	
 	
-	public void setCantidadDeProductos(int cantidadDeProductos) {
-		this.cantidadDeProductos = cantidadDeProductos;
-	}
-	
-	public void setPrecioTotal(double precioTotal) {
-		this.precioTotal = precioTotal;
-	}
-	
-	public void setPesoTotal(double pesoTotal) {
-		this.pesoTotal = pesoTotal;
-	}
-	
-	// Hace falta los setters?
-	
 	public int getCantidadDeProductos() {
 		return cantidadDeProductos;
 	}

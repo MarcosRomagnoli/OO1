@@ -15,7 +15,7 @@ public class Mamifero {
 	
 	public Mamifero (String identificador) {
 		this.identificador = identificador;
-	} // como se cual es el constructor, entrando al test? y ne el parcial?
+	}
 	
 	public String getIdentificador() {
 		return identificador;

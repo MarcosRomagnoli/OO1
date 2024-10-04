@@ -3,7 +3,11 @@ package ar.edu.unlp.info.oo1.Ejercicio9;
 public class CuentaCorriente extends Cuenta {
 	private double limite;
 	
-
+	public CuentaCorriente() {
+		super();
+		this.limite = 0;
+	}
+	
 	public double getLimite() {
 		return limite;
 	}
@@ -12,18 +16,11 @@ public class CuentaCorriente extends Cuenta {
 		this.limite=unLimite;
 	}
 
-	public CuentaCorriente() {
-		super();
-		this.limite = 0;
-	}
 
 	@Override
 	protected boolean puedeExtraer(double monto) {
-		return (this.getSaldo()+limite) >= monto;
+		return monto <= (this.getSaldo()+limite) ;
 	}
-
-
-
 	
 	
 }

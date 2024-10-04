@@ -1,11 +1,8 @@
-package ar.edu.unlp.info.oo1.ej10_jobScheduler;
+package ar.edu.unlp.info.oo1.Ejercicio10;
 
 public class JobDescription {
-
 	private double effort;
-
 	private int priority;
-
 	private String description;
 
 	public JobDescription (double anEffort, int aPriority, String aDescription) {

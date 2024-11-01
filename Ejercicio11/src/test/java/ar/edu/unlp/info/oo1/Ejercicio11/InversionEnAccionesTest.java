@@ -11,19 +11,19 @@ class InversionEnAccionesTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		inversion = new InversionEnAcciones("SoyUnaInversion", 5, 5);
+		inversion = new InversionEnAcciones("Williams", 10, 10);
 	}
 
 	@Test
 	void testConstructor() {
-		assertEquals("SoyUnaInversion", inversion.getNombre());
-		assertEquals(5, inversion.getCantidad());
-		assertEquals(5,inversion.getValorUnitario());
+		assertEquals("Williams", inversion.getNombre());
+		assertEquals(10, inversion.getCantidad());
+		assertEquals(10,inversion.getValorUnitario());
 	}
 	
 	@Test
 	void testValorActual() {
-		assertEquals(25,inversion.valorActual());
+		assertEquals(100,inversion.valorActual());
 	}
 
 }

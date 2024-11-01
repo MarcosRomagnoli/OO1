@@ -43,10 +43,15 @@ public class PrismaRectangular extends Pieza {
 		this.altura = altura;
 	}
 	
+	@Override
 	public double getVolumen() {
-		return this.ladoMayor * this.ladoMenor * this.altura;
+		return this.getLadoMayor() * this.getLadoMenor() * this.getAltura();
 	}
+	
+	@Override
 	public double getSuperficie() {
-		return 2 * (this.ladoMayor * this.ladoMenor + this.ladoMayor * this.altura + this.ladoMenor * this.altura);
+		return 2 * (this.getLadoMayor() * this.getLadoMenor() 
+				+ this.getLadoMayor() * this.getAltura() 
+				+ this.getLadoMenor() * this.getAltura());
 	}
 }

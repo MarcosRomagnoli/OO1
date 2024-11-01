@@ -18,18 +18,18 @@ class InversorTest {
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		inversorConInversiones = new Inversor("Lana Del Rey");
-		inversorSinInversiones = new Inversor ("Bjork");
+		inversorConInversiones = new Inversor("Max Verstappen");
+		inversorSinInversiones = new Inversor ("Franco Colapinto");
 		LocalDate fecha = LocalDate.now().minus(10,ChronoUnit.DAYS);
 		plazoFijo = new PlazoFijo(fecha,100, 0.05);
-		inversion = new InversionEnAcciones("SoyUnaInversion", 10, 10);
+		inversion = new InversionEnAcciones("Red Bull", 10, 10);
 		plazoFijo2 = new PlazoFijo(LocalDate.now(),100, 0.05);
 	}
 
 	@Test
 	void testConstructor() {
-		assertEquals("Lana Del Rey",inversorConInversiones.getNombre());
-		assertEquals("Bjork",inversorSinInversiones.getNombre());
+		assertEquals("Max Verstappen",inversorConInversiones.getNombre());
+		assertEquals("Franco Colapinto",inversorSinInversiones.getNombre());
 		assertNotNull(inversorSinInversiones.getInversiones());
 		assertNotNull(inversorConInversiones.getInversiones());
 	}

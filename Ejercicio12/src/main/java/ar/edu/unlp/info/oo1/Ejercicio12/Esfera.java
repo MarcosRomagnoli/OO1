@@ -16,10 +16,13 @@ public class Esfera extends Pieza {
 		this.radio = radio;
 	}
 	
+	@Override
 	public double getVolumen() {
-		return 4/3 * Math.PI * Math.pow(this.radio,3);
+		return ((double) 4/3) * Math.PI * Math.pow(this.getRadio(),3);
 	}
+	
+	@Override
 	public double getSuperficie() {
-		return 4 * Math.PI * Math.pow(this.radio,2);
+		return 4 * Math.PI * Math.pow(this.getRadio(),2);
 	}
 }

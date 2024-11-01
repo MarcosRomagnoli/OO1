@@ -25,12 +25,15 @@ public class Cilindro extends Pieza{
 	public void setAltura(int altura) {
 		this.altura = altura;
 	}
-
+	
+	@Override
 	public double getVolumen() {
-		return Math.PI * Math.pow(this.radio,2) * this.altura;
+		return Math.PI * Math.pow(this.getRadio(),2) * this.getAltura();
 	}
+	
+	@Override
 	public double getSuperficie() {
-		return 2 * this.radio * Math.PI * this.altura + 2 * Math.PI * Math.pow(this.radio,2);
+		return 2 * this.getRadio() * Math.PI * this.getAltura() + 2 * Math.PI * Math.pow(this.getRadio(),2);
 	}
 	
 	
